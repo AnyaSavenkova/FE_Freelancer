@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+  </head>
+  <body>
+    <h1>Задача 5</h1>
+    <p>
+      Дано кількість секунд, що пройшла від початку доби. Визначити скільки це
+      годин і хвилин.
+    </p>
+    <br />
+
+    <script>
+      //Вводимо змінні
+      let seconds = parseInt(
+        prompt("Введіть кількість секунд, що пройшла від початку доби")
+      )
+      const SEC_PER_MIN = 60
+      const SEC_PER_HOUR = 3600
+
+      //Робимо обчислення
+
+      let minutesResult = Math.floor(seconds / SEC_PER_MIN)
+      let hoursResult = Math.floor(seconds / SEC_PER_HOUR)
+
+      //Виводимо результат
+      document.write(
+        `Пройшло ${minutesResult} повних хв і ${hoursResult} повних год від початку доби`
+      )
+    </script>
+  </body>
+</html>

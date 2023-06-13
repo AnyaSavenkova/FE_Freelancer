@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 6</title>
+  </head>
+  <body>
+    <h1>Задача 6</h1>
+    <p>
+      З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+      Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек
+      (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+    <br />
+
+    <script>
+      //Вводимо змінні
+      let firstProductPrice = parseFloat(
+        prompt("Введіть вартість першого товару")
+      )
+      let firstProductCount = parseFloat(
+        prompt("Введіть кількість першого товару")
+      )
+      let secondProductPrice = parseFloat(
+        prompt("Введіть вартість другого товару")
+      )
+      let secondProductCount = parseFloat(
+        prompt("Введіть вартість другого товару")
+      )
+      let thirdProductPrice = parseFloat(
+        prompt("Введіть вартість третього товару")
+      )
+      let thirdProductCount = parseFloat(
+        prompt("Введіть вартість третього товару")
+      )
+
+      //Робимо обчислення
+      let firstProductSum = firstProductPrice * firstProductCount
+      let secondProductSum = secondProductPrice * secondProductCount
+      let thirdProductSum = thirdProductPrice * thirdProductCount
+
+      let totalSum = firstProductSum + secondProductSum + thirdProductSum
+
+      //Виводимо результат
+      document.write(`
+              <table>
+        <tr>
+          <td></td>
+          <td>Вартість</td>
+          <td>Кількість</td>
+          <td>Сума</td>
+        </tr>
+        <tr>
+          <td>Перший товар</td>
+          <td>${firstProductPrice}</td>
+          <td>${firstProductCount}</td>
+          <td>${firstProductSum}</td>
+        </tr>
+        <tr>
+          <td>Другий товар</td>
+          <td>${secondProductPrice}</td>
+          <td>${secondProductCount}</td>
+          <td>${secondProductSum}</td>
+        </tr>
+        <tr>
+          <td>Третій товар</td>
+          <td>${thirdProductPrice}</td>
+          <td>${thirdProductCount}</td>
+          <td>${thirdProductSum}</td>
+        </tr>
+        <tr>
+          <td>Разом</td>
+          <td></td>
+          <td></td>
+          <td>${totalSum}</td>
+        </tr>
+      </table>
+            `)
+    </script>
+  </body>
+</html>

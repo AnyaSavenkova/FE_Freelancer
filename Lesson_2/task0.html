@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 0</title>
+  </head>
+  <body>
+    <h1>Задача 0</h1>
+    <img width="300px" src="./img/0.png" alt="" />
+    <br />
+    <script>
+      //Ведення змінних
+      let firstNumber = parseFloat(prompt("Введіть перше число", 0))
+      let secondNumber = parseFloat(prompt("Введіть друге число", 0))
+      let thirdNumber = parseFloat(prompt("Введіть третє число", 0))
+
+      //Вирішення
+      let S1 = firstNumber + 12 + secondNumber
+      let S2 = Math.sqrt((firstNumber + secondNumber) / (2 * firstNumber))
+      let S3 = Math.pow((firstNumber + secondNumber) / thirdNumber, 1 / 3)
+      let S4 = Math.sin(firstNumber / -secondNumber)
+
+      //Виведення результату
+      document.write(`S1 = ${S1.toFixed(2)} <br>`)
+      document.write(`S2 = ${S2.toFixed(2)} <br>`)
+      document.write(`S3 = ${S3.toFixed(2)} <br>`)
+      document.write(`S4 = ${S4.toFixed(2)} <br>`)
+    </script>
+  </body>
+</html>
